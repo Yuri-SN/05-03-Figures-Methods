@@ -9,4 +9,6 @@ public:
           unsigned int angleA, unsigned int angleB)
         : Triangle("Прямоугольный треугольник", lengthA, lengthB, lengthC, angleA,
                    angleB, 90) {}
+
+    virtual void checkValid() override;
 };

@@ -9,9 +9,12 @@ public:
 
     Figure() : Figure(0, "Фигрура") {}
 
-    virtual void printInfo() const;
+    virtual void checkValid();
+
+    virtual void printInfo();
+
     void printName() const;
-    virtual void printValid() const;
+    void printValid() const;
     void printSidesCount() const;
 
 protected:

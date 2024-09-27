@@ -13,10 +13,12 @@ public:
         : Triangle("Треугольник", lengthA, lengthB, lengthC, angleA, angleB,
                    angleC) {}
 
-    void printLengths() const override;
-    void printAngles() const override;
+    virtual void checkValid() override;
+    virtual void printInfo() override;
+    virtual void printLengths() const;
+    virtual void printAngles() const;
 
-private:
+protected:
     unsigned int m_lengthA{};
     unsigned int m_lengthB{};
     unsigned int m_lengthC{};

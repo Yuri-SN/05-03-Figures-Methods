@@ -2,7 +2,14 @@
 
 #include "Figure.h"
 
-void Figure::printInfo() const {
+void Figure::checkValid() {
+    // Количество сторон равно 0
+    m_valid = sides_count == 0;
+}
+
+void Figure::printInfo() {
+    checkValid();
+
     printName();
     printValid();
     printSidesCount();
@@ -13,7 +20,7 @@ void Figure::printName() const {
 }
 
 void Figure::printValid() const {
-    std::string result = (sides_count == 0 && name == "Фигрура") ? "Правильная" : "Неправильная";
+    std::string result = m_valid ? "Правильная" : "Неправильная";
 
     std::cout << result << std::endl;
 }

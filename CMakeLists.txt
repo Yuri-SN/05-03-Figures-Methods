@@ -9,11 +9,12 @@ add_executable(05-03-Figures-Methods
     main.cpp
     Figure.h
     Figure.cpp
-    # Triangle.h
-    # Triangle.cpp
+    Triangle.h
+    Triangle.cpp
     # Quadrangle.h
     # Quadrangle.cpp
-    # Triangle/RightTriangle.h
+    Triangle/RightTriangle.h
+    Triangle/RightTriangle.cpp
     # Triangle/IsoscelesTriangle.h
     # Triangle/EquilateralTriangle.h
     # Quadrangle/Rectangle.h
