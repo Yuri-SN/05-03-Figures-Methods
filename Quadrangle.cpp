@@ -20,6 +20,25 @@ Quadrangle::Quadrangle(std::string figureName, unsigned int lengthA,
     m_angleD = angleD;
 }
 
+bool Quadrangle::isAnglesSum360() {
+    return m_angleA + m_angleB + m_angleC + m_angleD == 360;
+}
+
+bool Quadrangle::isValid() {
+    // стороны и углы произвольные, количество сторон равно 4,
+    // сумма углов равна 360
+
+    return sides_count == 4 && isAnglesSum360();
+}
+
+void Quadrangle::printInfo() {
+    printName();
+    printValid();
+    printSidesCount();
+    printLengths();
+    printAngles();
+}
+
 void Quadrangle::printLengths() const {
     std::cout << "Стороны: a=" << m_lengthA << " b=" << m_lengthB
               << " c=" << m_lengthC << " d=" << m_lengthD << std::endl;

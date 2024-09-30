@@ -17,16 +17,18 @@ Triangle::Triangle(std::string figureName, unsigned int lengthA,
     m_angleC = angleC;
 }
 
-void Triangle::checkValid() {
+bool Triangle::isAnglesSum180() {
+    return m_angleA + m_angleB + m_angleC == 180;
+}
+
+bool Triangle::isValid() {
     // Стороны и углы произвольные, количество сторон равно 3,
     // сумма углов равна 180
 
-    m_valid = ((sides_count == 3) && (m_angleA + m_angleB + m_angleC == 180));
+    return sides_count == 3 && isAnglesSum180();
 }
 
 void Triangle::printInfo() {
-    checkValid();
-
     printName();
     printValid();
     printSidesCount();

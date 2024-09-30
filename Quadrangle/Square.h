@@ -7,4 +7,6 @@ class Square final : public Rectangle {
 public:
     Square(unsigned int lengthABCD)
         : Rectangle("Квадрат", lengthABCD, lengthABCD) {}
+
+    virtual bool isValid() override;
 };

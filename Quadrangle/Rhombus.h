@@ -7,4 +7,6 @@ class Rhombus final : public Parallelogram {
 public:
     Rhombus(unsigned int lengthABCD, unsigned int angleAC, unsigned int angleBD)
         : Parallelogram("Ромб", lengthABCD, lengthABCD, angleAC, angleBD) {}
+
+    virtual bool isValid() override;
 };

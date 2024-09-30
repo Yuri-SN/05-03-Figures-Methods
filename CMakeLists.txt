@@ -11,16 +11,22 @@ add_executable(05-03-Figures-Methods
     Figure.cpp
     Triangle.h
     Triangle.cpp
-    # Quadrangle.h
-    # Quadrangle.cpp
     Triangle/RightTriangle.h
     Triangle/RightTriangle.cpp
-    # Triangle/IsoscelesTriangle.h
-    # Triangle/EquilateralTriangle.h
-    # Quadrangle/Rectangle.h
-    # Quadrangle/Square.h
-    # Quadrangle/Parallelogram.h
-    # Quadrangle/Rhombus.h
+    Triangle/IsoscelesTriangle.h
+    Triangle/IsoscelesTriangle.cpp
+    Triangle/EquilateralTriangle.h
+    Triangle/EquilateralTriangle.cpp
+    Quadrangle.h
+    Quadrangle.cpp
+    Quadrangle/Rectangle.h
+    Quadrangle/Rectangle.cpp
+    Quadrangle/Square.h
+    Quadrangle/Square.cpp
+    Quadrangle/Parallelogram.h
+    Quadrangle/Parallelogram.cpp
+    Quadrangle/Rhombus.h
+    Quadrangle/Rhombus.cpp
 )
 
 include(GNUInstallDirs)

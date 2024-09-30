@@ -13,7 +13,10 @@ public:
         : Triangle("Треугольник", lengthA, lengthB, lengthC, angleA, angleB,
                    angleC) {}
 
-    virtual void checkValid() override;
+    bool isAnglesSum180();
+
+    virtual bool isValid() override;
+
     virtual void printInfo() override;
     virtual void printLengths() const;
     virtual void printAngles() const;

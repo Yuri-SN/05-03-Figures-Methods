@@ -14,10 +14,15 @@ public:
         : Quadrangle("Четырёхугольник", lengthA, lengthB, lengthC, lengthD,
                      angleA, angleB, angleC, angleD) {}
 
-    void printLengths() const override;
-    void printAngles() const override;
+    bool isAnglesSum360();
 
-private:
+    virtual bool isValid() override;
+
+    virtual void printInfo() override;
+    virtual void printLengths() const;
+    virtual void printAngles() const;
+
+protected:
     unsigned int m_lengthA{};
     unsigned int m_lengthB{};
     unsigned int m_lengthC{};

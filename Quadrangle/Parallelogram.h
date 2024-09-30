@@ -15,4 +15,6 @@ public:
     Parallelogram(unsigned int lengthAC, unsigned int lengthBD,
                   unsigned int angleAC, unsigned int angleBD)
         : Parallelogram("Параллелограмм", lengthAC, lengthBD, angleAC, angleBD) {}
+
+    virtual bool isValid() override;
 };

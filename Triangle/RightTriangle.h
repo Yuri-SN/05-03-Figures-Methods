@@ -10,5 +10,5 @@ public:
         : Triangle("Прямоугольный треугольник", lengthA, lengthB, lengthC, angleA,
                    angleB, 90) {}
 
-    virtual void checkValid() override;
+    virtual bool isValid() override;
 };

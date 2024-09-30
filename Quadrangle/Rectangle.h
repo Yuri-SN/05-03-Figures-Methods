@@ -10,4 +10,6 @@ public:
 
     Rectangle(unsigned int lengthAC, unsigned int lengthBD)
         : Rectangle("Прямоугольник", lengthAC, lengthBD) {}
+
+    virtual bool isValid() override;
 };

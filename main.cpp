@@ -1,7 +1,13 @@
 #include <iostream>
 
 #include "Figure.h"
+#include "Quadrangle.h"
+#include "Quadrangle/Rectangle.h"
+#include "Quadrangle/Rhombus.h"
+#include "Quadrangle/Square.h"
 #include "Triangle.h"
+#include "Triangle/EquilateralTriangle.h"
+#include "Triangle/IsoscelesTriangle.h"
 #include "Triangle/RightTriangle.h"
 
 void print_info(Figure &figure) {
@@ -26,33 +32,33 @@ int main() {
     RightTriangle rt2{10, 20, 30, 50, 40};
     print_info(rt2);
 
-    // // Равнобедренный треугольник
-    // IsoscelesTriangle it{10, 20, 50, 60};
-    // print_info(it);
+    // Равнобедренный треугольник
+    IsoscelesTriangle it{10, 20, 50, 60};
+    print_info(it);
 
-    // // Равносторонний треугольник
-    // EquilateralTriangle et{30};
-    // print_info(et);
+    // Равносторонний треугольник
+    EquilateralTriangle et{30};
+    print_info(et);
 
-    // // Четырёхугольник
-    // Quadrangle q{10, 20, 30, 40, 50, 60, 70, 80};
-    // print_info(q);
+    // Четырёхугольник
+    Quadrangle q{10, 20, 30, 40, 50, 60, 70, 80};
+    print_info(q);
 
-    // // Прямоугольник
-    // Rectangle r{10, 20};
-    // print_info(r);
+    // Прямоугольник
+    Rectangle r{10, 20};
+    print_info(r);
 
-    // // Квадрат
-    // Square s{20};
-    // print_info(s);
+    // Квадрат
+    Square s{20};
+    print_info(s);
 
-    // // Параллелограмм
-    // Parallelogram p{20, 30, 30, 40};
-    // print_info(p);
+    // Параллелограмм
+    Parallelogram p{20, 30, 30, 40};
+    print_info(p);
 
-    // // Ромб
-    // Rhombus rm{30, 30, 40};
-    // print_info(rm);
+    // Ромб
+    Rhombus rm{30, 30, 40};
+    print_info(rm);
 
     return 0;
 }

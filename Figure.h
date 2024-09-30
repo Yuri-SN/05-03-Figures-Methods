@@ -9,16 +9,15 @@ public:
 
     Figure() : Figure(0, "Фигрура") {}
 
-    virtual void checkValid();
+    virtual bool isValid();
 
     virtual void printInfo();
 
-    void printName() const;
-    void printValid() const;
-    void printSidesCount() const;
+    void printName();
+    void printValid();
+    void printSidesCount();
 
 protected:
-    unsigned int sides_count{};
     std::string name{};
-    bool m_valid{false};
+    unsigned int sides_count{};
 };

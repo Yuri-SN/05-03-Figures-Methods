@@ -9,4 +9,6 @@ public:
                       unsigned int angleAC, unsigned int angleB)
         : Triangle("Равнобедренный треугольник", lengthAC, lengthB, lengthAC,
                    angleAC, angleB, angleAC) {}
+
+    virtual bool isValid() override;
 };

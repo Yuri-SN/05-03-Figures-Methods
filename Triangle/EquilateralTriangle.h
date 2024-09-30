@@ -8,4 +8,6 @@ public:
     EquilateralTriangle(unsigned int length)
         : Triangle("Равносторонний треугольник", length, length, length, 60, 60,
                    60) {}
+
+    virtual bool isValid() override;
 };
